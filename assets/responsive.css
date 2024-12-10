@@ -1,0 +1,51 @@
+@media screen and (max-width: 769px ) {
+    .intro { 
+        flex-direction: column;
+        height: auto;
+    }
+    .box img { 
+        height: 500px;
+        width: 40%;
+    }
+   
+    .slider img {
+        height: 150px;
+    }
+    /* .box { 
+        width: 100%;
+            height: auto;
+    } */
+    .hero {
+        gap: 0;
+        flex-direction: column;
+        height: auto;
+    }
+    .but {
+        padding: 5px 5px;
+        font-size: 20px;
+    }
+    .intro, .boxes {
+        align-items: center;
+        flex-direction: column; /* Changer en colonne */
+        
+    }
+    .box{
+        width : 80%;
+    }
+   
+    .divBut {
+    order: 2; 
+    }
+
+     .box2 {
+     order: 1 ;
+     display: none ;  
+     }
+
+}
+
+@media screen and (max-width: 426px) {
+    .slider img {
+        height: 100px;
+    }
+}

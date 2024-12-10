@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+body {
+  font-family: 'Luciole', sans-serif;
+  color: #022f7b;
+  background-color: #05f2f2;
+  background-repeat: no-repeat;
+  font-weight: normal;
+  /* Style de base */
+  font-style: normal;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+.logo {
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px 10px;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 0 10%;
+  background-color: #72fcfc;
+  margin-bottom: 30px;
+}
+
+li {
+  padding: 15px 0px;
+}
+
+#textInput {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  font-family: 'Luciole', sans-serif;
+  color: #022f7b;
+  font-size: 2rem;
+
+}
+
+.boxStyle::-webkit-scrollbar,
+#textInput::-webkit-scrollbar {
+  display: none;
+}
+
+#textInput:focus {
+  outline: none;
+  resize: none;
+}
+
+
+.box {
+  margin: 10px;
+  font-size: 2rem;
+  height: 60vh;
+  padding: 10px 10px;
+  height: 60vh;
+  width: 45%;
+  padding: 0px 20px;
+  overflow: hidden;
+  border: 2px solid black;
+  background: linear-gradient(45deg, rgba(41, 128, 185, 1), rgb(120, 193, 241));
+  padding: 10px;
+  word-wrap: break-word;
+  scrollbar-width: none;
+  /* Cache la barre de défilement sur Firefox */
+  -ms-overflow-style: none;
+
+}
+
+.divBut {
+  margin: 20px auto;
+}
+
+.but {
+  background-color: rgba(52, 152, 219, 0.541);
+  padding: 10px 20px;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+
+}
+
+button:hover {
+  color: rgba(231, 76, 60, 1);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,47 @@
+
+a {
+  cursor: pointer;
+  color: #043079;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  position: relative;
+  
+  
+}
+a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  background: black;
+  width: 0%;
+  transition: width 0.2s ease-in-out;
+}
+a:hover::after{
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  
+}
+.but {
+  font-size: 2rem;
+  color: #0d0d0d;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: 'Luciole';
+  src: url('/assets/fonts/Luciole-Regular.ttf') format('truetype'),
+       url('/assets/fonts/Luciole-Bold.ttf') format('truetype'),
+       url('/assets/fonts/Luciole-Regular-Italic.ttf') format('truetype'),
+       url('/assets/fonts/Luciole-Bold-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
