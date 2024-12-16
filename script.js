@@ -13,7 +13,7 @@
 
 
 const openModalBtn = document.getElementById("openModalBtn");
-const closeModalBtn = document.getElementById("closeModalBtn");
+// const closeModalBtn = document.getElementById("closeModalBtn");
 const modal = document.getElementById("myModal");
 
 // Ouvrir la modale
@@ -22,6 +22,17 @@ openModalBtn.addEventListener("click", () => {
 });
 
 // Fermer la modale
-closeModalBtn.addEventListener("click", () => {
-    modal.close(); // Ferme la modale
+// closeModalBtn.addEventListener("click", () => {
+//     modal.close(); // Ferme la modale
+// });
+modal.addEventListener("click", (e) => {
+  const modalBounds = modal.getBoundingClientRect();
+  if (
+      e.clientX < modalBounds.left ||
+      e.clientX > modalBounds.right ||
+      e.clientY < modalBounds.top ||
+      e.clientY > modalBounds.bottom
+  ) {
+      modal.close(); // Ferme la modale si on clique à l'extérieur
+  }
 });

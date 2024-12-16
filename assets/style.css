@@ -88,18 +88,10 @@ li {
   margin: 20px auto;
 }
 
-.but {
-  background-color: rgba(52, 152, 219, 0.541);
-  padding: 10px 20px;
-  border: 2px solid rgb(0, 0, 0);
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
 
-}
 
 button:hover {
-  color: rgba(231, 76, 60, 1);
+  color: #022f7b;
   transform: translateY(-4px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }

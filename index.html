@@ -7,6 +7,7 @@
                content="width=device-width, initial-scale=1.0"
           />
           <title>Document</title>
+          <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
           <link rel="stylesheet" href="assets/style.css" />
           <link rel="stylesheet" href="assets/placement.css" />
           <link rel="stylesheet" href="assets/dimention.css" />
@@ -31,26 +32,30 @@
                          <li><a href="faq.html">FAQ</a></li>
                     </ul>
                </nav>
-               <button id="openModalBtn">Ouvrir la modale</button>
+               <button id="openModalBtn">Connexion</button>
 
                <!-- Modale -->
-               <dialog id="myModal" >
-                
-                    
-                    
-                    <div class="wrapper">
+               <dialog id="myModal">    
+                    <div class="wrapper" >
                       <form class="colStart formStyle">
                            <div class="marginCenter">
                              <h3>Connecte toi</h3>
                            </div>
+                            
                            <label for="email">Email:</label>
-                           <input type="email" id="email"  />
+                           <div class="inputBox rowCenter">
+                             <i class='bx bxs-user'></i>
+                             <input type="email" id="email"  />
+                           </div>
                            <label for="password">Mot de passe:</label>
-                           <input type="password" id="password"/>
+                           <div class="inputBox rowCenter">
+                             <i class='bx bxs-lock-open'></i>
+                             <input type="password" id="password"/>
+                           </div>
                            <div class="rowCenter marginCenter">
                              <button type="submit">Connexion</button>
                       
-                             <button id="closeModalBtn">Fermer</button>
+                             
                            </div>
                       </form>
                     </div>
