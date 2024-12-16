@@ -34,17 +34,27 @@
                <button id="openModalBtn">Ouvrir la modale</button>
 
                <!-- Modale -->
-               <dialog id="myModal">
-                    <p>Connecte toi</p>
-                    <form>
-                         <label for="email">Email:</label>
-                         <input type="email" id="email" required />
-                         <label for="password">Mot de passe:</label>
-                         <input type="password" id="password" required />
-                         <button type="submit">Connexion</button>
-                         
-                    </form>
-                    <button id="closeModalBtn">Fermer</button>
+               <dialog id="myModal" >
+                
+                    
+                    
+                    <div class="wrapper">
+                      <form class="colStart formStyle">
+                           <div class="marginCenter">
+                             <h3>Connecte toi</h3>
+                           </div>
+                           <label for="email">Email:</label>
+                           <input type="email" id="email"  />
+                           <label for="password">Mot de passe:</label>
+                           <input type="password" id="password"/>
+                           <div class="rowCenter marginCenter">
+                             <button type="submit">Connexion</button>
+                      
+                             <button id="closeModalBtn">Fermer</button>
+                           </div>
+                      </form>
+                    </div>
+                    
                </dialog>
                
                     
