@@ -42,15 +42,14 @@
     gap: 2rem;
 
 }
-
-
   .rowWrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+    align-items: center;
+    align-content: center;
+    gap : 2rem;
   }
   
   .boxStyle:nth-child(1) {

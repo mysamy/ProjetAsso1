@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
   font-weight: normal;
   /* Style de base */
-  font-style: normal;
+  font-size: calc(14px + 0.5vw)
 }
 
 html {
@@ -102,4 +102,8 @@ button:hover {
   color: rgba(231, 76, 60, 1);
   transform: translateY(-4px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+.sectionBox {
+  height: 100vh;
+  
 }

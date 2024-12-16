@@ -1,46 +1,52 @@
-@media screen and (max-width: 769px ) {
-    .intro { 
-        flex-direction: column;
-        height: auto;
+@media screen and (max-width: 769px) {
+    .introSection {
+        height: 100vh;
+
     }
-    .box img { 
-        height: 500px;
-        width: 40%;
+
+    .boxAccueil {
+        width: 90%;
+        object-fit: cover;
+
     }
-   
+
     .slider img {
         height: 150px;
     }
-    /* .box { 
-        width: 100%;
-            height: auto;
-    } */
+
     .hero {
         gap: 0;
         flex-direction: column;
         height: auto;
     }
+
     .but {
         padding: 5px 5px;
         font-size: 20px;
     }
-    .intro, .boxes {
+
+    .introSection,
+    .sectionBox {
+        gap: 0;
         align-items: center;
-        flex-direction: column; /* Changer en colonne */
-        
-    }
-    .box{
-        width : 80%;
-    }
-   
-    .divBut {
-    order: 2; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+       
     }
 
-     .box2 {
-     order: 1 ;
-     display: none ;  
-     }
+    .box {
+        width: 50%;
+        height: 50%;
+    }
+
+    .divBut {
+        order: 2;
+    }
+
+    .box2 {
+        order: 1;
+        display: none;
+    }
 
 }
 
@@ -48,4 +54,23 @@
     .slider img {
         height: 100px;
     }
+    .box{
+        width: 90%;
+    }
 }
+@media screen and (min-width: 2560px) {
+    .sectionBox {
+        gap: 3rem;
+    }
+    .but {
+        padding: 40px 55px;
+        font-size: calc(14px + 1.5vw)
+    }
+    body {
+        font-size: calc(14px + 1.5vw)
+    }
+    .hero {
+        height: 150px;
+    }
+}
+
