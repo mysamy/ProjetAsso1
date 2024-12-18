@@ -90,11 +90,7 @@ li {
 
 
 
-button:hover {
-  color: #022f7b;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
+
 .sectionBox {
   height: 100vh;
   

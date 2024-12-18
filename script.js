@@ -21,18 +21,26 @@ openModalBtn.addEventListener("click", () => {
     modal.showModal(); // Affiche la modale
 });
 
+closeButton.addEventListener("click", () => {
+  modal.close(); // Ferme la modale
+});
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') { // Vérifie si la touche Échap est pressée
+    close();
+  }
+});
 // Fermer la modale
 // closeModalBtn.addEventListener("click", () => {
 //     modal.close(); // Ferme la modale
 // });
-modal.addEventListener("click", (e) => {
-  const modalBounds = modal.getBoundingClientRect();
-  if (
-      e.clientX < modalBounds.left ||
-      e.clientX > modalBounds.right ||
-      e.clientY < modalBounds.top ||
-      e.clientY > modalBounds.bottom
-  ) {
-      modal.close(); // Ferme la modale si on clique à l'extérieur
-  }
-});
+// modal.addEventListener("click", (e) => {
+//   const modalBounds = modal.getBoundingClientRect();
+//   if (
+//       e.clientX < modalBounds.left ||
+//       e.clientX > modalBounds.right ||
+//       e.clientY < modalBounds.top ||
+//       e.clientY > modalBounds.bottom
+//   ) {
+//       modal.close(); // Ferme la modale si on clique à l'extérieur
+//   }
+// });
