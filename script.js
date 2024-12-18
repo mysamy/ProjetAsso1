@@ -15,13 +15,15 @@
 const openModalBtn = document.getElementById("openModalBtn");
 // const closeModalBtn = document.getElementById("closeModalBtn");
 const modal = document.getElementById("myModal");
-
+const closeButton = modal.querySelector(".close-button");
+const form = modal.querySelector("form");
 // Ouvrir la modale
 openModalBtn.addEventListener("click", () => {
     modal.showModal(); // Affiche la modale
 });
 
-closeButton.addEventListener("click", () => {
+closeButton.addEventListener("click", (event) => {
+  event.preventDefault(); // Empêche le comportement par défaut du navigateur (redirection)
   modal.close(); // Ferme la modale
 });
 window.addEventListener('keydown', (event) => {
@@ -29,6 +31,8 @@ window.addEventListener('keydown', (event) => {
     close();
   }
 });
+
+
 // Fermer la modale
 // closeModalBtn.addEventListener("click", () => {
 //     modal.close(); // Ferme la modale

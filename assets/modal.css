@@ -1,6 +1,5 @@
 #myModal {
     width: 500px;
-    
     border: 2px solid ;
     background-color: #05f2f2;
     border-radius: 8px;
@@ -16,23 +15,7 @@
 .formStyle {
     gap: 20px;
 }
-.button1 {
-    padding: 8px 16px;
-    background-color: rgba(52, 152, 219, 0.541);
-    color: #b3fbfb;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border: 2px solid  rgba(52, 152, 219, 0.541);
-    transition: all 0.3s ease;
-}
-.button1:hover {
-    color: #022f7b;
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    background-color:rgba(65, 156, 216, 0.322);
-  }
+
 
 dialog::backdrop {
     background-color: #99caff77
@@ -80,17 +63,41 @@ input {
 
   .close-button {
     position: absolute;
-    top: 10px; 
-    right: 10px;
-    font-size: 24px; 
+    top: 20px; 
+    right: 20px;
+    font-size: 2rem; 
     font-weight: bold; 
-    color:#b3fbfb ; 
+    color:#022f7b; 
     cursor: pointer; 
     background: transparent; 
     border: none; 
     
+    
   }
   .close-button:hover {
+    transition:  0.2s ease-in-out;
+    transform: scale(1.5);
     background-color: none;
     color: rgb(35, 101, 146); /* Change la couleur au survol */
+  }
+
+  #inscription {
+    margin: 0 auto;
+  }
+  .button1 {
+    padding: 8px 16px;
+    background-color: rgba(52, 152, 219, 0.541);
+    color: #b3fbfb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 2px solid  rgba(52, 152, 219, 0.541);
+    transition: all 0.3s ease;
+}
+.button1:hover {
+    color: #022f7b;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    background-color:rgba(65, 156, 216, 0.322);
   }
