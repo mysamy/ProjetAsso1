@@ -1,15 +1,15 @@
 .modal {
     width: 500px;
     border: 2px solid;
-    background-color: #05f2f2;
+    background-color: var(--backgroundColor);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px var(--textColor);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(5px);
-    color: #022f7b;
+    color: var(--textColor);
 }
 
 .formStyle {
@@ -18,7 +18,7 @@
 
 
 dialog::backdrop {
-    background-color: #99caff77
+    background-color: var(--transparentColor);
 }
 
 .divForm {
@@ -28,7 +28,8 @@ dialog::backdrop {
 
 .divConnect {
 
-    background: #72fcfc;
+    background: var(--secondBackgroundColor);
+    ;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -49,13 +50,14 @@ div h3 {
 #emailInscription,
 #confirmPasswordInscription {
     font-family: 'Luciole', sans-serif;
-    color: #022f7b;
+    color: var(--textColor);
+  padding: 10px;
     font-size: calc(14px + 0.5vw);
     background: transparent;
     width: 100%;
     height: 50px;
     border-radius: 40px;
-    border: 3px solid rgb(52, 152, 219);
+    border: 3px solid var(--textColor);
     padding: 0 20px;
 }
 
@@ -64,7 +66,7 @@ div h3 {
 }
 
 input:focus {
-    box-shadow: 2px 3px 10px rgb(35, 101, 146);
+    box-shadow: 2px 3px 10px var(--textColor);
 
 }
 
@@ -76,15 +78,17 @@ input {
 }
 
 .closeModalBtn {
+    padding: 5px 10px;
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #022f7b;
+    font-weight: bold;  
+    color: var(--contrastColor);
+    
     cursor: pointer;
     background: transparent;
-    border: 2px solid ;
+    border: 2px solid;
 
 
 }
@@ -93,7 +97,7 @@ input {
     transition: 0.2s ease-in-out;
     transform: scale(1.5);
     background-color: none;
-    color: rgb(35, 101, 146);
+  color: var(--textColor);
     /* Change la couleur au survol */
 }
 
@@ -103,19 +107,19 @@ input {
 
 .button1 {
     padding: 8px 16px;
-    background-color: rgba(52, 152, 219, 0.541);
-    color: #b3fbfb;
+    background-color:var(--textColor);
+    color: var(--secondBackgroundColor);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.5rem;
-    border: 2px solid rgba(52, 152, 219, 0.541);
+    border: 2px solid var(--backgroundColor);
     transition: all 0.3s ease;
 }
 
 .button1:hover {
-    color: #022f7b;
+    color: var(--textColor);
     transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    background-color: rgba(65, 156, 216, 0.322);
+    box-shadow: 0 6px 15px var(--textColor);
+    background-color: var(--secondBackgroundColor);
 }

@@ -1,7 +1,7 @@
 
 a {
   cursor: pointer;
-  color: #043079;
+  color: var(--textColor);
   cursor: pointer;
   text-decoration: none;
   display: inline;
@@ -14,7 +14,7 @@ a::after {
   display: block;
   position: absolute;
   height: 3px;
-  background: black;
+  background: var(--textColor);
   width: 0%;
   transition: width 0.2s ease-in-out;
 }
@@ -28,7 +28,7 @@ h2 {
 }
 .but {
   font-size: 2rem;
-  color: #0d0d0d;
+  color: var(--textColor);
 }
 ul {
   list-style: none;
