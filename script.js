@@ -1,37 +1,50 @@
 (function handleTextInput() {
-  const textInput = document.getElementById("textInput");
-  const submitButton = document.getElementById("submitButton");
-  const outputDiv = document.getElementById("outputDiv");
+     const textInput = document.getElementById("textInput");
+     const submitButton = document.getElementById("submitButton");
+     const outputDiv = document.getElementById("outputDiv");
 
-  if (submitButton) {
-    submitButton.addEventListener("click", function () {
-      outputDiv.textContent = textInput.value;
-      outputDiv.style.display = "block";
-    });
-  }
+     if (submitButton) {
+          submitButton.addEventListener("click", function () {
+               outputDiv.textContent = textInput.value;
+               outputDiv.style.display = "block";
+          });
+     }
 })();
 
+const openConnexionBtn = document.getElementById("openConnexionBtn");
+const connexionModal = document.getElementById("connexionModal");
+const closeConnexionBtn = document.getElementById("closeConnexionBtn");
 
-const openModalBtn = document.getElementById("openModalBtn");
-// const closeModalBtn = document.getElementById("closeModalBtn");
-const modal = document.getElementById("myModal");
-const closeButton = modal.querySelector(".close-button");
-const form = modal.querySelector("form");
+const inscriptionBtn = document.getElementById("inscriptionBtn");
+const inscriptionModal = document.getElementById("inscriptionModal");
+const closeInscriptionBtn = document.getElementById("closeInscriptionBtn");
 // Ouvrir la modale
-openModalBtn.addEventListener("click", () => {
-    modal.showModal(); // Affiche la modale
+openConnexionBtn.addEventListener("click", () => {
+     connexionModal.showModal(); // Affiche la modale
 });
 
-closeButton.addEventListener("click", (event) => {
-  event.preventDefault(); // Empêche le comportement par défaut du navigateur (redirection)
-  modal.close(); // Ferme la modale
+closeConnexionBtn.addEventListener("click", (event) => {
+     event.preventDefault(); // Empêche le comportement par défaut du navigateur (redirection)
+     connexionModal.close(); // Ferme la modale
+
 });
-window.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') { // Vérifie si la touche Échap est pressée
-    close();
-  }
+openInscriptionBtn.addEventListener("click", (event) => {
+     connexionModal.close();
+     inscriptionModal.showModal(); // Affiche le modal d'inscription
+     
 });
 
+closeInscriptionBtn.addEventListener("click", (event) => {
+     event.preventDefault();
+     inscriptionModal.close();
+});
+
+// window.addEventListener("keydown", (event) => {
+//      if (event.key === "Escape") {
+//           // Vérifie si la touche Échap est pressée
+//           modal.close();
+//      }
+// });
 
 // Fermer la modale
 // closeModalBtn.addEventListener("click", () => {

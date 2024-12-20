@@ -1,6 +1,6 @@
-#myModal {
+.modal {
     width: 500px;
-    border: 2px solid ;
+    border: 2px solid;
     background-color: #05f2f2;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -20,27 +20,37 @@
 dialog::backdrop {
     background-color: #99caff77
 }
+
 .divForm {
     padding: 30px;
     gap: 30px;
 }
+
 .divConnect {
-    
+
     background: #72fcfc;
-    width:  100%;
+    width: 100%;
     padding: 10px;
     text-align: center;
     height: 100px;
 }
+
 .marginCenter {
     margin: 0 auto;
 }
+
 div h3 {
     font-size: 2rem;
 }
 
-#email, #password { 
-  
+#email,
+#password,
+#passwordInscription,
+#emailInscription,
+#confirmPasswordInscription {
+    font-family: 'Luciole', sans-serif;
+    color: #022f7b;
+    font-size: calc(14px + 0.5vw);
     background: transparent;
     width: 100%;
     height: 50px;
@@ -48,43 +58,50 @@ div h3 {
     border: 3px solid rgb(52, 152, 219);
     padding: 0 20px;
 }
+
 .inputBox {
     width: 100%;
 }
+
 input:focus {
-     box-shadow: 2px 3px 10px rgb(35, 101, 146);
-    
+    box-shadow: 2px 3px 10px rgb(35, 101, 146);
+
 }
+
 input {
     /* Style par défaut de la bordure */
-    
-    outline: none; /* Supprime le contour par défaut */
-  }
 
-  .close-button {
+    outline: none;
+    /* Supprime le contour par défaut */
+}
+
+.closeModalBtn {
     position: absolute;
-    top: 20px; 
+    top: 20px;
     right: 20px;
-    font-size: 2rem; 
-    font-weight: bold; 
-    color:#022f7b; 
-    cursor: pointer; 
-    background: transparent; 
-    border: none; 
-    
-    
-  }
-  .close-button:hover {
-    transition:  0.2s ease-in-out;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #022f7b;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+
+}
+
+#closeModalBtn:hover {
+    transition: 0.2s ease-in-out;
     transform: scale(1.5);
     background-color: none;
-    color: rgb(35, 101, 146); /* Change la couleur au survol */
-  }
+    color: rgb(35, 101, 146);
+    /* Change la couleur au survol */
+}
 
-  #inscription {
+#openInscriptionBtn {
     margin: 0 auto;
-  }
-  .button1 {
+}
+
+.button1 {
     padding: 8px 16px;
     background-color: rgba(52, 152, 219, 0.541);
     color: #b3fbfb;
@@ -92,12 +109,13 @@ input {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.5rem;
-    border: 2px solid  rgba(52, 152, 219, 0.541);
+    border: 2px solid rgba(52, 152, 219, 0.541);
     transition: all 0.3s ease;
 }
+
 .button1:hover {
     color: #022f7b;
     transform: translateY(-4px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    background-color:rgba(65, 156, 216, 0.322);
-  }
+    background-color: rgba(65, 156, 216, 0.322);
+}
