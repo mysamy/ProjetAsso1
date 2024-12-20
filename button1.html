@@ -31,11 +31,101 @@
                          <li><a href="faq.html">FAQ</a></li>
                     </ul>
                </nav>
-               <li>
-                    <a id="buttonConnexion" href="seconnecter.html"
-                         >Se connecter</a
-                    >
-               </li>
+               <div class="rowCenter">
+                    <button class="button1 openConnexionBtn">Connexion</button>
+                    <button class="button1 openInscriptionBtn">
+                         Inscription
+                    </button>
+               </div>
+               
+               <!-- Modale -->
+               <dialog id="" class="modal connexionModal">
+                    <form class="formStyle">
+                         <button id="closeConnexionBtn" class="closeModalBtn">
+                              X
+                         </button>
+                         <div class="divConnect colCenter">
+                              <h3>Connecte toi</h3>
+                         </div>
+
+                         <div class="divForm colStart">
+                              <label for="email">Email :</label>
+                              <div class="inputBox rowCenter">
+                                   <i class="bx bxs-user"></i>
+                                   <input type="email" id="email" required />
+                              </div>
+                              <label for="password">Mot de passe :</label>
+                              <div class="inputBox rowCenter">
+                                   <i class="bx bxs-lock-open"></i>
+                                   <input
+                                        type="password"
+                                        id="password"
+                                        required
+                                   />
+                              </div>
+                              <div class="marginCenter rowCenter">
+                                   <a>Mot de passe oublié</a>
+                                   <button class="button1" type="submit">
+                                        Connexion
+                                   </button>
+                              </div>
+                              <button
+                                   class="button1 openInscriptionBtn marginCenter"
+                                   type="button"
+                              >
+                                   Inscription
+                              </button>
+                         </div>
+                    </form>
+               </dialog>
+               <dialog class="modal inscriptionModal">
+                    <form class="formStyle">
+                         <button id="closeInscriptionBtn" class="closeModalBtn">
+                              X
+                         </button>
+                         <div class="divConnect colCenter">
+                              <h3>Inscris-toi</h3>
+                         </div>
+                         <div class="divForm colStart">
+                              <label for="emailInscription">Email :</label>
+                              <div class="inputBox rowCenter">
+                                   <i class="bx bxs-user"></i>
+                                   <input
+                                        type="email"
+                                        id="emailInscription"
+                                        required
+                                   />
+                              </div>
+                              <label for="passwordInscription"
+                                   >Mot de passe :</label
+                              >
+                              <div class="inputBox rowCenter">
+                                   <i class="bx bxs-lock-open"></i>
+                                   <input
+                                        type="password"
+                                        id="passwordInscription"
+                                        required
+                                   />
+                              </div>
+                              <label for="confirmPasswordInscription"
+                                   >Confirmer le mot de passe :</label
+                              >
+                              <div class="inputBox rowCenter">
+                                   <i class="bx bxs-lock-open"></i>
+                                   <input
+                                        type="password"
+                                        id="confirmPasswordInscription"
+                                        required
+                                   />
+                              </div>
+                              <div class="marginCenter rowCenter">
+                                   <button class="button1" type="submit">
+                                        S'inscrire
+                                   </button>
+                              </div>
+                         </div>
+                    </form>
+               </dialog>
           </header>
           <section class="rowWrap sectionBox">
                <div class="box box1" id="inputDiv">
@@ -43,7 +133,7 @@
                </div>
                <div class="box box2" id="outputDiv"></div>
                <div class="divBut" id="divButton">
-                    <button class="but" id="submitButton">Bouton</button>
+                    <button class="button1" id="submitButton">Bouton</button>
                </div>
           </section>
 

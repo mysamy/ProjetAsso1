@@ -11,31 +11,41 @@
      }
 })();
 
-const openConnexionBtn = document.getElementById("openConnexionBtn");
-const connexionModal = document.getElementById("connexionModal");
+const openConnexionBtn = document.querySelector(".openConnexionBtn");
+const connexionModal = document.querySelector(".connexionModal");
 const closeConnexionBtn = document.getElementById("closeConnexionBtn");
 
-const inscriptionBtn = document.getElementById("inscriptionBtn");
-const inscriptionModal = document.getElementById("inscriptionModal");
+const openInscriptionBtn = document.querySelectorAll(".openInscriptionBtn");
+const inscriptionModal = document.querySelector(".inscriptionModal");
 const closeInscriptionBtn = document.getElementById("closeInscriptionBtn");
 // Ouvrir la modale
 openConnexionBtn.addEventListener("click", () => {
+     console.log("Ouverture de la modale de connexion");
      connexionModal.showModal(); // Affiche la modale
 });
 
 closeConnexionBtn.addEventListener("click", (event) => {
      event.preventDefault(); // Empêche le comportement par défaut du navigateur (redirection)
+     console.log("Fermeture de la modale de connexion");
      connexionModal.close(); // Ferme la modale
 
 });
-openInscriptionBtn.addEventListener("click", (event) => {
-     connexionModal.close();
-     inscriptionModal.showModal(); // Affiche le modal d'inscription
-     
-});
+openInscriptionBtn.forEach((button) => {
+     button.addEventListener("click", (event) => {
+         event.preventDefault(); // Empêche la soumission du formulaire
+         console.log("Ouverture de la modale d'inscription depuis la connexion");
+ 
+         // Fermer la modale de connexion
+         connexionModal.close();
+ 
+         // Afficher la modale d'inscription
+         inscriptionModal.showModal();
+     });
+ });
 
 closeInscriptionBtn.addEventListener("click", (event) => {
      event.preventDefault();
+     console.log("Fermeture de la modale d'inscription");
      inscriptionModal.close();
 });
 
