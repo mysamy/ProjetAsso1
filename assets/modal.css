@@ -79,17 +79,17 @@ input {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #022f7b;
     cursor: pointer;
     background: transparent;
-    border: none;
+    border: 2px solid ;
 
 
 }
 
-#closeModalBtn:hover {
+.closeModalBtn:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.5);
     background-color: none;
