@@ -17,7 +17,7 @@
           <link rel="stylesheet" href="assets/font.css" />
           <link rel="stylesheet" href="assets/accueil.css" />
           
-          <link rel="stylesheet" href="assets/modal.css" />
+          <link rel="stylesheet" href="assets/dialog.css" />
           <link rel="stylesheet" href="assets/atest.css">
           <link rel="stylesheet" href="assets/responsive.css" />
      </head>
@@ -43,9 +43,9 @@
                     </div>
                </nav>
                <!-- Modale -->
-               <dialog id="" class="dialog modal connexionModal">
-                    <form class="formStyle dialog__form">
-                         <button id="closeConnexionBtn" class="form__exit closeModalBtn">
+               <dialog id="connexion-modal" class="dialog ">
+                    <form class="dialog__form">
+                         <button id="closeConnexionBtn" class="form__button--exit ">
                               X
                          </button>
                          <div class="divConnect colCenter">
@@ -82,9 +82,9 @@
                          </div>
                     </form>
                </dialog>
-               <dialog class="modal inscriptionModal">
+               <dialog class="dialog inscriptionModal">
                     <form class="formStyle">
-                         <button id="closeInscriptionBtn" class="closeModalBtn">
+                         <button id="closeInscriptionBtn" class="form__button--exit">
                               X
                          </button>
                          <div class="divConnect colCenter">
