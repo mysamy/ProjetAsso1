@@ -11,7 +11,7 @@
      }
 })();
 
-const openConnexionBtn = document.querySelector(".openConnexionBtn");
+const connexionButton = document.querySelector(".navbar__button--connexion");
 const connexionModal = document.querySelector(".connexionModal");
 const closeConnexionBtn = document.getElementById("closeConnexionBtn");
 
@@ -19,7 +19,7 @@ const openInscriptionBtn = document.querySelectorAll(".openInscriptionBtn");
 const inscriptionModal = document.querySelector(".inscriptionModal");
 const closeInscriptionBtn = document.getElementById("closeInscriptionBtn");
 // Ouvrir la modale
-openConnexionBtn.addEventListener("click", () => {
+connexionButton.addEventListener("click", () => {
      console.log("Ouverture de la modale de connexion");
      connexionModal.showModal(); // Affiche la modale
 });

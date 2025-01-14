@@ -11,41 +11,41 @@
                href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
                rel="stylesheet"
           />
+          
           <link rel="stylesheet" href="assets/style.css" />
           <link rel="stylesheet" href="assets/placement.css" />
-
           <link rel="stylesheet" href="assets/font.css" />
           <link rel="stylesheet" href="assets/accueil.css" />
-          <link rel="stylesheet" href="assets/responsive.css" />
+          
           <link rel="stylesheet" href="assets/modal.css" />
+          <link rel="stylesheet" href="assets/atest.css">
+          <link rel="stylesheet" href="assets/responsive.css" />
      </head>
      <body>
-          <header class="rowSpaceBetween hero">
-               <div class="logo">
-                    <img
+          <header class="header">
+               <div class="header__logo">
+                    <img class="header__logo-img"
                          src="https://picsum.photos/50/50?random=1"
                          alt="logo"
                     />
                </div>
-               <nav class="rowCenter">
-                    <ul class="rowCenter">
-                         <li><a href="index.html">Accueil</a></li>
-                         <li><a href="button1.html">Bouton1</a></li>
-                         <li><a href="index.html">Bouton2</a></li>
-                         <li><a href="faq.html">FAQ</a></li>
+               <nav class="navbar">
+                    <ul class="navbar__links">
+                         <li><a class="navbar__link" href="index.html">Accueil</a></li>
+                         <li><a class="navbar__link" href="navbar__button--connexion.html">Bouton1</a></li>
+                         <li><a class="navbar__link" href="index.html">Bouton2</a></li>
+                         <li><a class="navbar__link" href="faq.html">FAQ</a></li>
                     </ul>
+                    <div class="navbar__button">
+                         <button class=" navbar__button--connexion ">
+                              Connexion
+                         </button>
+                    </div>
                </nav>
-
-               <div class="rowCenter">
-                    <button class="button1 openConnexionBtn">Connexion</button>
-                    
-                        
-               </div>
-
                <!-- Modale -->
-               <dialog id="" class="modal connexionModal">
-                    <form class="formStyle">
-                         <button id="closeConnexionBtn" class="closeModalBtn">
+               <dialog id="" class="dialog modal connexionModal">
+                    <form class="formStyle dialog__form">
+                         <button id="closeConnexionBtn" class="form__exit closeModalBtn">
                               X
                          </button>
                          <div class="divConnect colCenter">
@@ -69,12 +69,12 @@
                               </div>
                               <div class="marginCenter rowCenter">
                                    <a>Mot de passe oublié</a>
-                                   <button class="button1" type="submit">
+                                   <button class="navbar__button--connexion" type="submit">
                                         Connexion
                                    </button>
                               </div>
                               <button
-                                   class="button1 openInscriptionBtn marginCenter"
+                                   class="navbar__button--connexion openInscriptionBtn marginCenter"
                                    type="button"
                               >
                                    Inscription
@@ -123,7 +123,7 @@
                                    />
                               </div>
                               <div class="marginCenter rowCenter">
-                                   <button class="button1" type="submit">
+                                   <button class="navbar__button--connexion" type="submit">
                                         S'inscrire
                                    </button>
                               </div>

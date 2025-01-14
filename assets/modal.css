@@ -105,21 +105,4 @@ input {
     margin: 0 auto;
 }
 
-.button1 {
-    padding: 8px 16px;
-    background-color:var(--textColor);
-    color: var(--secondBackgroundColor);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border: 2px solid var(--backgroundColor);
-    transition: all 0.3s ease;
-}
 
-.button1:hover {
-    color: var(--textColor);
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px var(--textColor);
-    background-color: var(--secondBackgroundColor);
-}
