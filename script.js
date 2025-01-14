@@ -49,6 +49,8 @@ closeInscriptionBtn.addEventListener("click", (event) => {
      inscriptionModal.close();
 });
 
+
+// Méthode pour fermer la modale avec escape mais cest par default avec modal
 // window.addEventListener("keydown", (event) => {
 //      if (event.key === "Escape") {
 //           // Vérifie si la touche Échap est pressée
@@ -56,7 +58,7 @@ closeInscriptionBtn.addEventListener("click", (event) => {
 //      }
 // });
 
-// Fermer la modale
+// Fermer la modale en cliquant en dehors du modal
 // closeModalBtn.addEventListener("click", () => {
 //     modal.close(); // Ferme la modale
 // });
