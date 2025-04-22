@@ -12,7 +12,7 @@
 })();
 
 const connexionButton = document.querySelector(".navbar__button--connexion");
-const connexion-modal = document.querySelector("#connexion-modal");
+const connexionModal = document.querySelector("#connexion-modal");
 const closeConnexionBtn = document.getElementById("closeConnexionBtn");
 
 const openInscriptionBtn = document.querySelectorAll(".openInscriptionBtn");
@@ -21,13 +21,13 @@ const closeInscriptionBtn = document.getElementById("closeInscriptionBtn");
 // Ouvrir la modale
 connexionButton.addEventListener("click", () => {
      console.log("Ouverture de la modale de connexion");
-    connexion-modal.showModal(); // Affiche la modale
+    connexionModal.showModal(); // Affiche la modale
 });
 
 closeConnexionBtn.addEventListener("click", (event) => {
      event.preventDefault(); // Empêche le comportement par défaut du navigateur (redirection)
      console.log("Fermeture de la modale de connexion");
-    connexion-modal.close(); // Ferme la modale
+    connexionModal.close(); // Ferme la modale
 
 });
 openInscriptionBtn.forEach((button) => {
@@ -36,7 +36,7 @@ openInscriptionBtn.forEach((button) => {
          console.log("Ouverture de la modale d'inscription depuis la connexion");
  
          // Fermer la modale de connexion
-        connexion-modal.close();
+        connexionModal.close();
  
          // Afficher la modale d'inscription
          inscriptionModal.showModal();
